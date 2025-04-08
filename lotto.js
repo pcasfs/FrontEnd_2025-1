@@ -58,7 +58,7 @@ function create(winningNum) {
 }
 
 function purchase() {
-  pcArray = [];
+  // pcArray = [];
 
   const ea = document.querySelector("#purchase-ea").value;
 
@@ -102,11 +102,11 @@ function pcShow(pcNum) {
 
     wrapperResult.appendChild(text2);
 
-    pcNum.forEach((a) => {
+    pcNum.forEach((lottoNumbers) => {
       const wrapperBall = document.createElement("div");
       wrapperBall.className = "wrapper-ball";
 
-      a.forEach((num, index) => {
+      lottoNumbers.forEach((num, index) => {
         const ball = document.createElement("div");
         ball.className = `ball ball-0${index + 1}`;
 
